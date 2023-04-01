@@ -19,14 +19,12 @@ export default function Home() {
 
   return (
     <div
-    // className={`h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scroll-smooth lg:scrollbar-track-blackPrim lg:scrollbar-thumb-blackTert  lg:scrollbar-thumb-rounded-xl lg:scrollbar-thin text-Inter bg-white text-whitePrim font-Inter`}
+      className={`h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scroll-smooth lg:scrollbar-track-blackPrim lg:scrollbar-thumb-blackTert  lg:scrollbar-thumb-rounded-xl lg:scrollbar-thin text-Inter bg-white text-whitePrim font-Inter`}
     >
       <Parallax strength={600}>
         <Hero />
       </Parallax>
-      <Parallax strength={600}>
-        <UpcomingEvents />
-      </Parallax>
+      <Parallax strength={600}>{/* <UpcomingEvents /> */}</Parallax>
       {/* <MyEvent />
 
       <Cta />
