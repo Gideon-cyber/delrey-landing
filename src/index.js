@@ -6,21 +6,22 @@ import App from "./App";
 
 import { Provider } from "react-redux";
 import { store } from "./redux/store";
-import { PersistGate } from "redux-persist/integration/react";
 import { persistStore } from "redux-persist";
-import { ChainId, ThirdwebProvider } from "@thirdweb-dev/react";
 import { BrowserRouter as Router } from "react-router-dom";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 let persistor = persistStore(store);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <Provider store={store}>
-    {/* <PersistGate persistor={persistor}> */}
-    <Router>
-      <App />
-    </Router>
-    {/* </PersistGate> */}
+    <ParallaxProvider>
+      {/* <PersistGate persistor={persistor}> */}
+      <Router>
+        <App />
+      </Router>
+      {/* </PersistGate> */}
+    </ParallaxProvider>
   </Provider>
 );
 
