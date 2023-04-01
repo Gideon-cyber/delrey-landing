@@ -1,5 +1,3 @@
-import axios from "axios";
-
 import { useEffect, useState } from "react";
 
 import { useAppDispatch, useAppSelector } from "../redux/hooks";
@@ -7,11 +5,10 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import Hero from "../components/Hero";
-import UpcomingEvents from "../components/UpcomingEvents";
-import Cta from "../components/Cta";
 import Footer from "../components/Footer";
-import MyEvent from "../components/MyEvents";
 import { Parallax } from "react-parallax";
+import About from "../components/About";
+import Roadmap from "../components/Roadmap";
 
 export default function Home() {
   // const [proposals, setProposals] = useState<any[]>([])
@@ -19,17 +16,17 @@ export default function Home() {
 
   return (
     <div
-      className={`h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scroll-smooth lg:scrollbar-track-blackPrim lg:scrollbar-thumb-blackTert  lg:scrollbar-thumb-rounded-xl lg:scrollbar-thin text-Inter bg-white text-whitePrim font-Inter`}
+      className={`h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scroll-smooth lg:scrollbar-track-white lg:scrollbar-thumb-bluePrim  lg:scrollbar-thumb-rounded-xl lg:scrollbar-thin text-Inter bg-white text-whitePrim font-Inter`}
     >
       <Parallax strength={600}>
         <Hero />
       </Parallax>
-      <Parallax strength={600}>{/* <UpcomingEvents /> */}</Parallax>
-      {/* <MyEvent />
+      <About />
+      <div className="w-full h-auto bg-bluePrim text-white">
+        <Roadmap />
+      </div>
 
-      <Cta />
-
-      <Footer /> */}
+      {/* <Footer /> */}
 
       <ToastContainer autoClose={3000} />
     </div>

@@ -11,9 +11,9 @@ module.exports = {
         poppins: ["Poppins", "sans-serif"],
       },
       colors: {
-        bluePrim: "#242565",
+        bluePrim: "#632c99",
         pinkPrim: "#F5167E",
-        blueSec: "#3D37F1",
+        blueSec: "#006298",
       },
       screens: {
         sm: "480px",

@@ -5,7 +5,7 @@ import ButtonComponent from "./Button";
 
 const Hero = (props) => {
   return (
-    <div className="py-[16px] px-[16px] md:py-[20px] md:px-[60px] min-h-screen h-auto w-full relative animate-ChangeBg sm:bg-cover bg-center text-white bg-bg-hero-2">
+    <div className="py-[16px] px-[16px] md:py-[20px] md:px-[60px] min-h-screen h-auto w-full relative animate-ChangeBg bg-cover bg-center text-white bg-bg-hero-2">
       <Header />
       {/* <div className="h-full max-w-7xl mx-auto w-full flex items-center justify-center">
         <div className="flex flex-col md:flex-row items-center justify-center gap-[20px]">
